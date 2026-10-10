@@ -1,31 +1,5 @@
----
-import {Image} from "astro:assets";
-import pfp from "../assets/pfp.avif";
-import MenuIcon from "../../public/menu-icon.svg";
----
-<header class="sm:mt-4 flex justify-around items-center">
-	<nav>
-		<details class="relative hover:cursor-pointer">
-			<summary class="list-none">
-				<MenuIcon width={16} height={16} fill="currentColor" class="text-text"/>
-			</summary>
-			<div class="absolute mt-2 left-[50%] transform-[translateX(-50%)]">
-				<button><a href="/">Home</a></button>
-			</div>
-		</details>
-	</nav>
-
-	<div class="flex items-center gap-2">
-		<Image
-			src={pfp}
-			alt="My profile"
-			loading="eager"
-			width=64
-			class="rounded-full"
-		/>
-		<div class="flex flex-col text-center">
-			<h2 class="font-bold">Voxi0</h2>
-			<p>he/him</p>
-		</div>
-	</div>
+<header>
+    <div class="bg-red-400 w-25 absolute -top-5 -left-11 -rotate-15">
+        <h1 class="text-3xl text-center">Wow</h1>
+    </div>
 </header>
